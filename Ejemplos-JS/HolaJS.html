@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hola mundo en JS</h1>
+    <script>
+        //window.alert("Hola JavaScript")
+        //var nombre = window.prompt("¿Cuàl es tu nombre?")
+        //window.confirm("Hola" + nombre + "¿Quieres aprender mas JS?")
+        //window.aler("Este es un error")
+        window.document.write('<h1 style = "color:red;">Me gusta JS!!</h1>')
+        window.console.log("Hola consola")
+        var lenguajes =['HTML','CSS','JavaScript','PHP']
+        imprimir(lenguajes)
+
+        function imprimir(tabla)
+        {
+        document.write('<table style="border:solid">')
+      
+        for(var i=0; i< lenguajes.length; i++)
+            {
+                document.write('<tr>')
+                document.write('<td style="border:solid">')
+                document.write(lenguajes[i])
+                document.write('</td>')
+                document.write('</tr>')
+            }
+        }
+    </script>
+</body>
+</html>
+ <!-- Tarea: Imprimir tablas de multiplicar, horizontal y vertical. 
